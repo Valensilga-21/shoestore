@@ -1,0 +1,8 @@
+package com.sena.shoestore.Interfaces;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IClientes extends CrudRepository<clientes, String>{
+
+}

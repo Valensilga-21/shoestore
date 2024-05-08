@@ -1,0 +1,14 @@
+package com.sena.shoestore.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sena.shoestore.Interfaces.IClientes;
+
+@Service
+public class clienteService implements IClientes{
+
+	@Autowired
+	private IClientes data;
+	
+}

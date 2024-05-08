@@ -1,0 +1,5 @@
+server.port=8080
+spring.datasource.url=jdbcjdbc:mysql://localhost:3306/shoestore
+spring.datasource.password=
+spring.datasource.username=root
+spring.jpa.hibernate.ddl-auto=create

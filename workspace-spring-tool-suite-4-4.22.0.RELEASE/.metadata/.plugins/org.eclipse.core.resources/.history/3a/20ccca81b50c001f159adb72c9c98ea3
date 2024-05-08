@@ -1,0 +1,12 @@
+package com.sena.shoestore.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sena.shoestore.Interfaces.IProductos;
+
+public class productoController implements IProductos{
+	
+	@Autowired
+	private IProductos data;
+
+}

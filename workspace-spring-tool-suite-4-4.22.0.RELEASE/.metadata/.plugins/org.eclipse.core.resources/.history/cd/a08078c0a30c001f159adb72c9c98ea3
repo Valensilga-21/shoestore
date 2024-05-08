@@ -1,0 +1,41 @@
+package com.sena.shoestore.models;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity(name="Clientes")
+public class clientes {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.UUID)
+	@Column(name="id_cliente")
+	private String id_cliente;
+	
+	@Column(name="tipo_identificacion")
+	private String tipo_identificacion;
+	
+	@Column(name="identificacion")
+	private String identificacion;
+	
+	@Column(name="nombre_cliente")
+	private String nombre_cliente;
+	
+	@Column(name="apellido_cliente")
+	private String apellido_cliente;
+	
+	@Column(name="telefono")
+	private String telefono;
+	
+	@Column(name="direccion")
+	private String direccion;
+	
+	@Column(name="ciudad")
+	private String ciudad;
+	
+	@Column(name="estado")
+	private String estado;
+
+}
