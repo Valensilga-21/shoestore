@@ -1,6 +1,0 @@
-package com.sena.shoestore.InterfaceService;
-
-public interface IClienteService {
-
-
-}
