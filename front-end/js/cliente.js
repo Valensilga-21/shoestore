@@ -1,6 +1,12 @@
 var url="http://localhost:8080/api/shoestore/cliente/";
 
 function listarClientes(){
+    
+    var urlLocal=url;
+    var filtro=document.getElementById("texto").value
+    if(filtro!="")
+        urlLocal += "busqueda/" + filtro;
+
 $.ajax({
     url:url,
     type:"GET",

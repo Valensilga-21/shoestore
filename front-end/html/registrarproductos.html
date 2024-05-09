@@ -7,52 +7,38 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/cliente.js"></script>
+    <script src="../js/productos.js"></script>
 </head>
 <body class="bg-dark">
     <div class="container-fluid">
         <div class="container" style="padding-top: 8%;">
             <div class="container" style="box-shadow: 0px 0px 20px rgb(255, 255, 255); padding: 5%; border-radius: 40px; width: 70%; background-color: rgba(0, 0, 0, 0.018);">
                 <div class="modal-body">
-                    <h1 style="text-align: center; padding-bottom: 3%; color: white;"><B>Registrar Cliente</B></h1>
+                    <h1 style="text-align: center; padding-bottom: 3%; color: white;"><B>Registrar Producto</B></h1>
                     <div class="row">
-                        <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <input type="hidden" id="id_cliente" step="1">
-                            <label for=""><b>Tipo de Identificación</b></label>
-                            <select name=""  id="tipo_identificacion" class="form-select">
-                                <option value="" selected disabled></option>
-                                <option value="TI">TI</option>
-                                <option value="CC">CC</option>
-                                <option value="CE">CE</option>
-                            </select>
-                        </div>
                         <div class="col col-xl-6 col-12" style="padding-top: 2%; color: white;">
-                            <label for="" ><b>Identificación</b></label>
-                            <input type="number" id="identificacion"  step="1" class="form-control" onfocusout="validarIdentificacion(this);">
+                            <label for=""><b>Nombre Producto</b></label>
+                            <input type="text" id="nombre_producto"  step="1" class="form-control" onfocusout="validarNombreProduc(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Nombre</b></label>
-                            <input type="text" id="nombre_cliente" class="form-control" onfocusout="validarNombre(this);">
+                            <label for=""><b>Descripción</b></label>
+                            <input type="text" id="descripcion" class="form-control" onfocusout="validarDescripcion(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Apellido</b></label>
-                            <input type="text" id="apellido_cliente" class="form-control" onfocusout="validarApellido(this);">
+                            <label for=""><b>Cantidad</b></label>
+                            <input type="number" id="cantidad" class="form-control" onfocusout="validarCantidad(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Telefono</b></label>
-                            <input type="number" id="telefono" class="form-control" onfocusout="validarTelefono(this);">
+                            <label for=""><b>Precio</b></label>
+                            <input type="number" id="precio" class="form-control" onfocusout="validarPrecio(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Direccion</b></label>
-                            <input type="text" id="direccion" class="form-control" onfocusout="validarDireccion(this);">
+                            <label for=""><b>% IVA</b></label>
+                            <input type="text" id="porcentaje_iva" class="form-control" onfocusout="validarIva(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Ciudad</b></label>
-                            <input type="text" id="ciudad" class="form-control" onfocusout="validarCiudad(this);">
-                        </div>
-                        <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
-                            <label for=""><b>Correo Electrónico</b></label>
-                            <input type="email" id="correo_electronico" class="form-control" onfocusout="validarCorreo(this);">
+                            <label for=""><b>% Descuento</b></label>
+                            <input type="text" id="porcentaje_descuento" class="form-control" onfocusout="validarDescuento(this);">
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top:2%; color: white;">
                             <label for="estado"><b>Estado</b></label>
@@ -63,9 +49,9 @@
                             </select>
                         </div>
                         <div class="col col-xl-6 col-12" style="padding-top: 5%;text-align: end;">
-                            <button class="btn btn-success" onclick="registrarCliente();">Enviar</button>
+                            <button class="btn btn-success" onclick="registrarProducto();">Enviar</button>
                         </div>
-                </div>
+                    </div>
                 <br>
                   
               </div>
